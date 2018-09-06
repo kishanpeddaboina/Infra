@@ -1,4 +1,4 @@
- pipeline {
+pipeline {
 agent any
  stages{
      stage("EC2_INFRA") {
@@ -9,7 +9,6 @@ agent any
                terraform init
                terraform apply -auto-approve -var 
                git add terraform.tfstate
-            }
-            }
-            }
-            }
+        }}}
+        }
+            
